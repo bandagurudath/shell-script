@@ -13,4 +13,4 @@ echo "All Movies are: ${MOVIES[@]}"
 
 echo "All Movies are: ${MOVIES[*]}" #"*" also prints all the data stored in array
 
-echo "Count of index present in array: ${#MOVIES}"
+echo "Count of index present in array: ${#{MOVIES}}"
