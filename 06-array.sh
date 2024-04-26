@@ -9,6 +9,8 @@ MOVIES=("RRR" "DjTillu" "murari")
 
 echo "First Movie is: ${MOVIES[0]}"
 echo "First Movie is: ${MOVIES[1]}"
-echo "First Movie is: ${MOVIES[@]}"
+echo "All Movies are: ${MOVIES[@]}"
 
-echo "First Movie is: ${MOVIES[*]}" #"*" also prints all the data stored in array
+echo "All Movies are: ${MOVIES[*]}" #"*" also prints all the data stored in array
+
+echo "All Movies are" $MOVIES
