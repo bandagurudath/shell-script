@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Hi, Who are yoy?"
-read -p Name
+read -s Name
 echo "What is your age"
-read -p Age
+read -s Age
 echo "Name is: $Name and Age is: $Age"
