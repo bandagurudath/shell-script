@@ -1,6 +1,6 @@
 #!/bin/bash
 
-userID=(id -u)
+userID=$(id -u)
 
 if [ $userID -eq 0 ]
 then
