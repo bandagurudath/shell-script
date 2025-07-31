@@ -1,6 +1,9 @@
 #!/bin/bash
 
 userID=$(id -u)
+Script_name=$(echo $0 | cut -d "." -f1)
+Time_stamp=$(date +%F-%H-%M-%S)
+Log_File=tmp/$Script_name-$Time_stamp.log
 
 validate (){
 
@@ -21,11 +24,11 @@ else
     echo "Your are super user"
 fi
 
-dnf install nginx -y
+dnf install nginx -y &>> Log_File
 validate $? Installtion
 
-systemctl enable nginx
+systemctl enable nginx &>> Log_File
 validate $? ENable
 
-systemctl start nginx
+systemctl start nginx &>> Log_File
 validate $? Start
