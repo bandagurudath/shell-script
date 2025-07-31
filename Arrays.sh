@@ -8,5 +8,5 @@ Movies=(ABC,XYZ,123)
 
 for i in $Movies
 do
-echo $Movies[i]
+echo "$Movies[i] /n"
 done
