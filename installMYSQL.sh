@@ -10,6 +10,6 @@ else
     exit 1
 fi
 
-dnf install mysql -y
+dnf install mysql-server -y
 dnf enable msqld
 dnf start mysqld
