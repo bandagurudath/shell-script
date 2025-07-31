@@ -3,7 +3,7 @@
 userID=$(id -u)
 Script_name=$(echo $0 | cut -d "." -f1)
 Time_stamp=$(date +%F-%H-%M-%S)
-Log_File=tmp/$Script_name-$Time_stamp.log
+Log_File=/tmp/$Script_name-$Time_stamp.log
 
 validate (){
 
