@@ -24,11 +24,11 @@ else
     echo "Your are super user"
 fi
 
-dnf install nginx -y &>> Log_File
+dnf install nginx -y &>>$Log_File
 validate $? Installtion
 
-systemctl enable nginx &>> Log_File
+systemctl enable nginx &>>$Log_File
 validate $? ENable
 
-systemctl start nginx &>> Log_File
+systemctl start nginx &>>$Log_File
 validate $? Start
