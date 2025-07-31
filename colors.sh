@@ -6,7 +6,7 @@ Time_stamp=$(date +%F-%H-%M-%S)
 Log_File=/tmp/$Script_name-$Time_stamp.log
 
 G="\e[32m"
-G="\e[31m"
+R="\e[31m"
 Y="\e[33m"
 N="\e[0m"
 
