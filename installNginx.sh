@@ -6,14 +6,13 @@ if [ $userID -ne 0 ]
 then
     echo "Run with Super user"
     exit 1
-    
 else
     echo "Your are super user"
 fi
 
 dnf install nginx -y
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Nginx installion Failure"
 else
@@ -22,7 +21,7 @@ fi
 
 dnf enable nginx
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Nginx enable Failure"
 else
@@ -31,7 +30,7 @@ fi
 
 dnf start nginx
 
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Nginx start Failure"
 else
