@@ -19,7 +19,7 @@ else
     echo "Nginx installion Success"
 fi
 
-dnf enable nginx
+systemctl enable nginx
 
 if [ $? -ne 0 ]
 then 
@@ -28,7 +28,7 @@ else
     echo "Nginx enable Success"
 fi
 
-dnf start nginx
+systemctl start nginx
 
 if [ $? -ne 0 ]
 then 
