@@ -10,6 +10,6 @@ else
     exit 1
 fi
 
-dnf install mysql -y
-dnf enable msqld
-dnf start mysqld
+dnf install nginx -y
+dnf enable nginx
+dnf start nginx
