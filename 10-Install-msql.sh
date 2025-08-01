@@ -11,5 +11,5 @@ echo "You are a super user"
 fi
 
 dnf install mysql -y
-dnf enable mysql
-dnf start mysql
+systemctl enable mysql
+systemctl start mysql
