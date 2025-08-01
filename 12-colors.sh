@@ -52,11 +52,3 @@ done
 
 
 
-
-
-
-dnf install mysql -y &>>$Log_FIle
-validate $? mysql
-
-dnf install nodejs -y &>>$Log_FIle
-validate $? nodejs
