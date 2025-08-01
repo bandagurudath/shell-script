@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Storage=$(df -hT)
+Storage=$(df -hT | grep xfs)
 Threshold_Storage=30
 
 while IFS= read -r line
