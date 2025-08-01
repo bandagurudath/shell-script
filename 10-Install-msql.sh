@@ -14,8 +14,16 @@ dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
-echo "Installation failed"
+echo "mysql Installation failed"
 exit 1
 else
-echo "Installation PAssed"
+echo "mysql Installation Passed"
+fi
+
+dnf install nodejs -y
+then
+echo "nodejs Installation failed"
+exit 1
+else
+echo "nodejs Installation Passed"
 fi
