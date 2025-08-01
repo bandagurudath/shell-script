@@ -28,6 +28,30 @@ else
 echo -e "You are $G a super user $N"
 fi
 
+
+for i in $@
+do
+dnf list installed $i
+if [ $? -eq 0 ]
+echo "$i is already installed"
+else
+dnf install $i -y
+validate $? $i
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 dnf install mysql -y &>>$Log_FIle
 validate $? mysql
 
