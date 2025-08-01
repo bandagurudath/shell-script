@@ -22,10 +22,10 @@ fi
 
 if [ $USESRID -ne 0 ]
 then
-echo "You are $R not a super user $N "
+echo -e "You are $R not a super user $N "
 exit 1
 else
-echo "You are $G a super user $N"
+echo -e "You are $G a super user $N"
 fi
 
 dnf install mysql -y &>>Log_FIle
