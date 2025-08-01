@@ -33,7 +33,9 @@ for i in $@
 do
 dnf list installed $i
 if [ $? -eq 0 ]
+then
 echo "$i is already installed"
+exit 1
 else
 dnf install $i -y
 validate $? $i
