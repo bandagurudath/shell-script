@@ -10,6 +10,5 @@ do
 if [ $Current_Usage -gt $Threshold_Storage ]
 then
 echo "path storage $FIle_Name has exceeded $Threshold_Storage"
-else
 fi
 done <<< $Storage
