@@ -1,8 +1,8 @@
 #!/bin/bash
 
-Storage=$(df -hT)
+Storage=("Word1" "Word2" "Word3")
 
 for i in $Storage
 do
-echo "File size of : $i" 
+echo "Word is  : $i" 
 done
