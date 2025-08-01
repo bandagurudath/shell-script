@@ -28,8 +28,8 @@ else
 echo -e "You are $G a super user $N"
 fi
 
-dnf install mysql -y &>>Log_FIle
+dnf install mysql -y &>>$Log_FIle
 validate $? mysql
 
-dnf install nodejs -y &>>Log_FIle
+dnf install nodejs -y &>>$Log_FIle
 validate $? nodejs
