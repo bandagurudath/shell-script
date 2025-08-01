@@ -21,6 +21,7 @@ echo "mysql Installation Passed"
 fi
 
 dnf install nodejs -y
+if [ $? -ne 0 ]
 then
 echo "nodejs Installation failed"
 exit 1
