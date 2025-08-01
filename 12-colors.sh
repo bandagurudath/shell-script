@@ -31,13 +31,13 @@ fi
 
 for i in $@
 do
-dnf list installed $i
+dnf list installed $i &>>$Log_FIle
 if [ $? -eq 0 ]
 then
 echo "$i is already installed"
 exit 1
 else
-dnf install $i -y
+dnf install $i -y &>>$Log_FIle
 validate $? $i
 fi
 done
