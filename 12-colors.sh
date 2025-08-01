@@ -35,7 +35,6 @@ dnf list installed $i &>>$Log_FIle
 if [ $? -eq 0 ]
 then
 echo "$i is already installed"
-exit 1
 else
 dnf install $i -y &>>$Log_FIle
 validate $? $i
